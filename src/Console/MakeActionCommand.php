@@ -2,12 +2,12 @@
 
 namespace Lorisleiva\Actions\Console;
 
-use Illuminate\Console\Concerns\CreatesMatchingTest;
+use Illuminate\Console\Concerns\CallsCommands;
 use Illuminate\Console\GeneratorCommand;
 
 class MakeActionCommand extends GeneratorCommand
 {
-    use CreatesMatchingTest;
+    use CallsCommands;
 
     protected $name = 'make:action';
 
